@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            height: 550px;
+            border: 1px solid black;
+            background-color: azure;
+        }
+        .top{
+            height: 30%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border-radius: 10%;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .b1{
+            background-color: red;
+            animation-name: color;
+        }
+        @keyframes color{
+            0%{
+                background-color: orange;
+            }
+            50%{
+                background-color: blue;
+            }
+            75%{
+                background-color: green;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+        .b2{
+            background-color: red;
+            animation-name: move;
+        }
+        @keyframes move{
+            0%{
+                transform: translate(0,0);
+            }
+            33%{
+                transform: translate(0,-40px);
+            }
+            66%{
+                transform: translate(0,40px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        .b3{
+            background-color: red;
+            animation-name: rotate;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .b4{
+            background-color: red;
+            animation-name: pulse;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .b5{
+            background-color: red;
+            animation-name: fade;
+        }
+        @keyframes fade{
+            0%{
+                opacity: .2;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: .2;
+            }
+        }
+        .b6{
+            animation-name: load;
+            animation-timing-function: linear;
+            border: 7px solid white;
+            border-top: 7px solid black;
+            border-radius: 50%;
+        }
+        @keyframes load{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .bottom{
+            height: 70%;
+            width: 100%;
+            background-color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .left{
+            height: 200px;
+            width: 400px;
+            border: 2px dotted black;
+        }
+        .sq{
+            height: 80px;
+            width: 80px;
+            background-color: brown;
+            animation-name: sq;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sq{
+            0%{
+                transform: translate(0);
+            }
+            25%{
+                transform: translate(320px,0);
+            }
+            50%{
+                transform: translate(320px,120px);
+            }
+            75%{
+                transform: translate(0,120px);
+            }
+            100%{
+                transform: translate(0);
+            }
+        }
+        .right{
+            height: 200px;
+            width: 400px;
+            border: 2px dotted black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ball{
+            height: 40px;
+            width: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+            animation-name: google;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .c1{
+            background-color: red;
+            animation-delay: -.2s;
+        }
+        .c2{
+            background-color: orange;
+            animation-delay: .1s;
+        }
+        .c3{
+            background-color: yellow;
+            animation-delay: .4s;
+        }
+        .c4{
+            background-color: green;
+            animation-delay: .7s;
+        }
+        .c5{
+            background-color: blue;
+            animation-delay: 1s;
+        }
+        @keyframes google{
+            0%{
+                transform: translate(0,0);
+            }
+            33%{
+                transform: translate(0,-20px);
+            }
+            /* 66%{
+                transform: translate(0,20px);
+            } */
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1 align="center">Css & Html Animation Examples</h1>
+        <div class="top">
+            <div class="box b1"></div>
+            <div class="box b2"></div>
+            <div class="box b3"></div>
+            <div class="box b4"></div>
+            <div class="box b5"></div>
+            <div class="box b6"></div>
+        </div>
+        <div class="bottom">
+            <!-- <h1 align="">Html Animation Examples</h1> -->
+            <div class="left">
+                <div class="sq"></div>
+            </div>
+            <div class="right">
+                <div class="ball c1"></div>
+                <div class="ball c2"></div>
+                <div class="ball c3"></div>
+                <div class="ball c4"></div>
+                <div class="ball c5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
